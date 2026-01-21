@@ -3,89 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Berkah Trans Indonesia — Sewa Mobil Elf Pariwisata & Rombongan Haji/Umrah</title>
-  <meta name="description" content="Berkah Trans Indonesia melayani sewa mobil Elf untuk pariwisata, city tour, ziarah, antar-jemput, serta rombongan haji/umrah. Armada terawat, sopir berpengalaman, harga transparan." />
+  <title>Berkah Trans Indonesia — Travel Pariwisata & Shuttle Jamaah Umrah/Haji</title>
+  <meta name="description" content="Berkah Trans Indonesia melayani travel pariwisata & rombongan: Elf/Hiace/Bus Medium/Big Bus. Spesialis antar-jemput jamaah umrah/haji (shuttle kloter), armada terawat, driver berpengalaman." />
   <meta name="theme-color" content="#0B1D3B" />
 
   <meta property="og:title" content="Berkah Trans Indonesia" />
-  <meta property="og:description" content="Sewa Mobil Elf — Pariwisata, Rombongan Haji/Umrah, Antar-Jemput." />
+  <meta property="og:description" content="Travel Pariwisata & Shuttle Jamaah Umrah/Haji — Elf, Hiace, Bus Medium, Big Bus." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/logo.png" />
 
   <link rel="icon" type="image/png" href="assets/favicon.ico" />
 
-  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Tailwind via CDN (simple deploy: cukup upload folder ini ke hosting) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
-          colors: {
-            brandBlue: '#0B1D3B',
-            brandGold: '#D8A21A'
-          },
-          boxShadow: {
-            soft: '0 10px 30px rgba(2, 6, 23, 0.15)'
-          }
+          colors: { brandBlue: '#0B1D3B', brandGold: '#D8A21A' },
+          boxShadow: { soft: '0 10px 30px rgba(2, 6, 23, 0.15)' }
         }
       }
     };
   </script>
 
-  <!-- Structured Data (ubah data kontak & lokasi) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Berkah Trans Indonesia",
-    "description": "Sewa mobil Elf untuk pariwisata dan rombongan haji/umrah.",
-    "image": "assets/logo.png",
-    "telephone": "+6285190643564",
-    "areaServed": "Jawa Timur",
-    "url": "https://contoh-domain-anda.com",
-    "sameAs": [],
-    "priceRange": "Rp",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Jalan raya grandsite No.32, Mergelo, Surodinawan, Kec. Prajurit Kulon",
-      "addressLocality": "Kota Mojokerto",
-      "addressRegion": "Jawa Timur",
-      "addressCountry": "ID"
-    }
-  }
-  </script>
-
   <style>
-    /* Smooth anchor scrolling */
     html { scroll-behavior: smooth; }
-    /* Subtle grain */
-    .grain::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="2" stitchTiles="stitch"/></filter><rect width="220" height="220" filter="url(%23n)" opacity=".12"/></svg>');
-      mix-blend-mode: overlay;
-      pointer-events: none;
-      border-radius: inherit;
+    .grain::before{
+      content:""; position:absolute; inset:0;
+      background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="2" stitchTiles="stitch"/></filter><rect width="220" height="220" filter="url(%23n)" opacity=".12"/></svg>');
+      mix-blend-mode: overlay; pointer-events:none; border-radius:inherit;
     }
   </style>
 </head>
+
 <body class="bg-slate-950 text-slate-100 font-sans">
 
   <!-- Top Bar -->
   <div class="hidden md:block bg-slate-900/60 border-b border-white/10">
     <div class="max-w-6xl mx-auto px-5 py-2 flex items-center justify-between text-sm text-slate-200">
       <div class="flex items-center gap-4">
-        <span class="inline-flex items-center gap-2">📍 <span class="text-slate-300">Melayani Jawa Timur & sekitarnya</span></span>
+        <span class="inline-flex items-center gap-2">📍 <span class="text-slate-300">Pariwisata & Shuttle Jamaah (Jawa Timur & sekitarnya)</span></span>
         <span class="inline-flex items-center gap-2">🕒 <span class="text-slate-300">Respon cepat via WhatsApp</span></span>
       </div>
-      <a id="topPhone" href="#kontak" class="hover:text-white">☎️ <span class="text-slate-300">+6285190643564</span></a>
+      <a id="topPhone" href="#kontak" class="hover:text-white">☎️ <span class="text-slate-300">+62xxxxxxxxxxx</span></a>
     </div>
   </div>
 
@@ -103,16 +68,15 @@
       <nav class="hidden md:flex items-center gap-6 text-sm text-slate-200">
         <a class="hover:text-white" href="#layanan">Layanan</a>
         <a class="hover:text-white" href="#armada">Armada</a>
-        <a class="hover:text-white" href="#paket">Paket</a>
-        <a class="hover:text-white" href="#testimoni">Testimoni</a>
+        <a class="hover:text-white" href="#paket">Harga</a>
+        <a class="hover:text-white" href="#shuttle">Shuttle Jamaah</a>
         <a class="hover:text-white" href="#faq">FAQ</a>
         <a class="hover:text-white" href="#kontak">Kontak</a>
       </nav>
 
       <div class="flex items-center gap-3">
         <a id="ctaTop" href="#kontak" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-brandGold text-slate-950 font-semibold shadow-soft hover:brightness-110 transition">
-          Pesan Sekarang
-          <span aria-hidden="true">→</span>
+          Pesan Sekarang <span aria-hidden="true">→</span>
         </a>
         <button id="menuBtn" class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-xl border border-white/10 hover:bg-white/5" aria-label="Buka menu">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
@@ -120,13 +84,12 @@
       </div>
     </div>
 
-    <!-- Mobile menu -->
     <div id="mobileMenu" class="md:hidden hidden border-t border-white/10 bg-slate-950">
       <div class="max-w-6xl mx-auto px-5 py-4 grid gap-3 text-sm">
         <a class="hover:text-white" href="#layanan">Layanan</a>
         <a class="hover:text-white" href="#armada">Armada</a>
-        <a class="hover:text-white" href="#paket">Paket</a>
-        <a class="hover:text-white" href="#testimoni">Testimoni</a>
+        <a class="hover:text-white" href="#paket">Harga</a>
+        <a class="hover:text-white" href="#shuttle">Shuttle Jamaah</a>
         <a class="hover:text-white" href="#faq">FAQ</a>
         <a class="hover:text-white" href="#kontak">Kontak</a>
         <a id="ctaMobile" class="mt-2 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-brandGold text-slate-950 font-semibold shadow-soft" href="#kontak">Pesan Sekarang →</a>
@@ -145,53 +108,54 @@
         <div>
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs text-slate-200">
             <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
-            Sewa Mobil Elf • Pariwisata • Rombongan Haji/Umrah
+            Travel Pariwisata • Elf/Hiace/Bus • Shuttle Jamaah Umrah/Haji
           </div>
+
           <h1 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
-            Perjalanan Nyaman & Aman
-            <span class="block text-brandGold">Untuk Rombongan Anda</span>
+            Armada Lengkap untuk
+            <span class="block text-brandGold">Wisata & Antar Jemput Jamaah</span>
           </h1>
+
           <p class="mt-4 text-slate-200/90 text-lg leading-relaxed">
-            Berkah Trans Indonesia melayani sewa mobil <b>Isuzu Elf</b> untuk <b>pariwisata</b>, <b>ziarah</b>, <b>antar-jemput</b>, serta <b>rombongan haji/umrah</b>.
-            Armada terawat, sopir berpengalaman, dan pelayanan ramah.
+            Berkah Trans Indonesia melayani perjalanan <b>pariwisata, ziarah, sekolah, kantor</b> hingga <b>shuttle jamaah umrah/haji</b>.
+            Pilih armada sesuai rombongan: <b>Elf</b>, <b>Hiace</b>, <b>Bus Medium</b>, atau <b>Big Bus</b>.
           </p>
 
           <div class="mt-6 flex flex-wrap gap-3">
             <a id="waHero" href="#kontak" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-brandGold text-slate-950 font-semibold shadow-soft hover:brightness-110 transition">
-              <span>Chat WhatsApp</span>
-              <span aria-hidden="true">💬</span>
+              Chat WhatsApp <span aria-hidden="true">💬</span>
             </a>
-            <a href="#paket" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border border-white/15 bg-white/5 hover:bg-white/10 transition">
-              Lihat Paket
-              <span aria-hidden="true">→</span>
+            <a href="#armada" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border border-white/15 bg-white/5 hover:bg-white/10 transition">
+              Lihat Armada <span aria-hidden="true">→</span>
             </a>
           </div>
 
           <div class="mt-8 grid grid-cols-3 gap-4 text-sm">
             <div class="p-4 rounded-2xl border border-white/10 bg-white/5 grain relative">
-              <div class="text-2xl font-extrabold">10–19</div>
-              <div class="text-slate-300 mt-1">Seat (Elf Short/Long)</div>
+              <div class="text-2xl font-extrabold">10–50+</div>
+              <div class="text-slate-300 mt-1">Kapasitas Rombongan</div>
             </div>
             <div class="p-4 rounded-2xl border border-white/10 bg-white/5 grain relative">
               <div class="text-2xl font-extrabold">24/7</div>
               <div class="text-slate-300 mt-1">Fast Response</div>
             </div>
             <div class="p-4 rounded-2xl border border-white/10 bg-white/5 grain relative">
-              <div class="text-2xl font-extrabold">+Driver</div>
-              <div class="text-slate-300 mt-1">Berpengalaman</div>
+              <div class="text-2xl font-extrabold">On-Time</div>
+              <div class="text-slate-300 mt-1">Koordinasi Rapi</div>
             </div>
           </div>
         </div>
 
+        <!-- Estimasi cepat -->
         <div class="relative">
-          <div class="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/60 to-slate-950/60 p-6 shadow-soft overflow-hidden grain">
+          <div class="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/60 to-slate-950/60 p-6 shadow-soft overflow-hidden grain relative">
             <div class="absolute -top-24 -right-24 h-56 w-56 rounded-full bg-brandGold/20 blur-3xl"></div>
             <div class="relative">
               <div class="flex items-center gap-3">
-                <div class="h-11 w-11 rounded-2xl bg-brandGold/15 border border-brandGold/30 flex items-center justify-center">🚐</div>
+                <div class="h-11 w-11 rounded-2xl bg-brandGold/15 border border-brandGold/30 flex items-center justify-center">🧾</div>
                 <div>
                   <div class="font-bold">Estimasi Cepat</div>
-                  <div class="text-sm text-slate-300">Isi tujuan & tanggal — kami hitungkan</div>
+                  <div class="text-sm text-slate-300">Pilih armada & kebutuhan — kami hitungkan</div>
                 </div>
               </div>
 
@@ -199,71 +163,72 @@
                 <div class="grid sm:grid-cols-2 gap-3">
                   <label class="grid gap-1 text-sm">
                     <span class="text-slate-300">Kota asal</span>
-                    <input id="asal" required class="px-4 py-3 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="Contoh: Pasuruan" />
+                    <input id="asal" required class="h-12 px-4 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="Contoh: Mojokerto" />
                   </label>
                   <label class="grid gap-1 text-sm">
                     <span class="text-slate-300">Tujuan</span>
-                    <input id="tujuan" required class="px-4 py-3 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="Contoh: Bromo / Surabaya" />
-                  </label>
-                </div>
-                <div class="grid sm:grid-cols-3 gap-3">
-                  <label class="grid gap-1 text-sm">
-                    <span class="text-slate-300">Tanggal</span>
-                    <input id="tanggal" type="date" class="px-4 py-3 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" />
-                  </label>
-                  <label class="grid gap-1 text-sm">
-                    <span class="text-slate-300">Jumlah penumpang</span>
-                    <input id="pax" type="number" min="1" class="px-4 py-3 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="Contoh: 12" />
-                  </label>
-                  <label class="grid gap-1 text-sm">
-                    <span class="text-slate-300">Kebutuhan</span>
-                    <select id="kebutuhan"
-                      class="h-12 px-4 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60 appearance-none leading-[3rem]">
-                      <option>Pariwisata</option>
-                      <option>Ziarah</option>
-                      <option>Antar-jemput</option>
-                      <option>Rombongan Umrah</option>
-                      <option>Rombongan Haji</option>
-                    </select>
+                    <input id="tujuan" required class="h-12 px-4 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="Contoh: Bromo / Surabaya" />
                   </label>
                 </div>
 
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                  <label class="grid gap-1 text-sm">
+                    <span class="text-slate-300">Tanggal</span>
+                    <input id="tanggal" type="date" class="h-12 px-4 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" />
+                  </label>
+
+                  <label class="grid gap-1 text-sm">
+                    <span class="text-slate-300">Jumlah penumpang</span>
+                    <input id="pax" type="number" min="1" class="h-12 px-4 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="Contoh: 27" />
+                  </label>
+
+                  <label class="grid gap-1 text-sm">
+                    <span class="text-slate-300">Kebutuhan</span>
+                    <div class="relative">
+                      <select id="kebutuhan" class="h-12 w-full px-4 pr-10 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60 appearance-none">
+                        <option>Pariwisata</option>
+                        <option>Ziarah</option>
+                        <option>Antar-jemput</option>
+                        <option>Shuttle Umrah</option>
+                        <option>Shuttle Haji</option>
+                      </select>
+                      <svg class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-300"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                  </label>
+                </div>
+
+                <label class="grid gap-1 text-sm">
+                  <span class="text-slate-300">Armada (pilih)</span>
+                  <div class="relative">
+                    <select id="armada" class="h-12 w-full px-4 pr-10 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60 appearance-none">
+                      <option>Elf (Short/Long)</option>
+                      <option>Hiace Commuter</option>
+                      <option>Bus Medium (±25–33 seat)</option>
+                      <option>Big Bus (±45–59 seat)</option>
+                      <option>Custom / Multi Unit</option>
+                    </select>
+                    <svg class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-300"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                </label>
+
                 <button class="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-brandGold text-slate-950 font-semibold shadow-soft hover:brightness-110 transition" type="submit">
-                  Kirim ke WhatsApp
-                  <span aria-hidden="true">→</span>
+                  Kirim ke WhatsApp <span aria-hidden="true">→</span>
                 </button>
 
                 <p class="text-xs text-slate-400">
-                  *Form ini langsung membuka chat WhatsApp dengan template pesan. Anda bisa ubah nomor WA di file <code>index.html</code>.
+                  *Form ini langsung membuka chat WhatsApp dengan template pesan. Nomor WA cukup ubah 1 variabel di bawah.
                 </p>
               </form>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Trust badges -->
-  <section class="border-y border-white/10 bg-slate-950/40">
-    <div class="max-w-6xl mx-auto px-5 py-10">
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
-          <div class="text-lg font-bold">Armada Terawat</div>
-          <div class="text-slate-300 text-sm mt-1">Perawatan rutin & kebersihan prioritas.</div>
-        </div>
-        <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
-          <div class="text-lg font-bold">Harga Transparan</div>
-          <div class="text-slate-300 text-sm mt-1">Detail biaya jelas sebelum berangkat.</div>
-        </div>
-        <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
-          <div class="text-lg font-bold">Rombongan Besar</div>
-          <div class="text-slate-300 text-sm mt-1">Bisa koordinasi beberapa unit & jadwal.</div>
-        </div>
-        <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
-          <div class="text-lg font-bold">Dokumen & Jadwal</div>
-          <div class="text-slate-300 text-sm mt-1">Siap bantu penjadwalan & titik jemput.</div>
-        </div>
       </div>
     </div>
   </section>
@@ -273,7 +238,7 @@
     <div class="flex items-end justify-between gap-6 flex-wrap">
       <div>
         <h2 class="text-3xl font-extrabold tracking-tight">Layanan Utama</h2>
-        <p class="mt-2 text-slate-300">Pilih kebutuhan perjalanan—kami sesuaikan armada & rute terbaik.</p>
+        <p class="mt-2 text-slate-300">Pilih kebutuhan perjalanan—kami sesuaikan armada, rute, dan jadwal.</p>
       </div>
       <a href="#kontak" class="inline-flex items-center gap-2 text-sm text-brandGold hover:brightness-110">Konsultasi gratis →</a>
     </div>
@@ -282,22 +247,22 @@
       <div class="p-6 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition">
         <div class="text-3xl">🗺️</div>
         <div class="mt-3 font-bold text-lg">Pariwisata</div>
-        <p class="mt-2 text-sm text-slate-300">City tour, wisata alam, keluarga, kantor, sekolah.</p>
+        <p class="mt-2 text-sm text-slate-300">Wisata keluarga, kantor, sekolah, luar kota & dalam kota.</p>
       </div>
       <div class="p-6 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition">
         <div class="text-3xl">🕌</div>
         <div class="mt-3 font-bold text-lg">Ziarah</div>
-        <p class="mt-2 text-sm text-slate-300">Rute ziarah wali, pesantren, dan perjalanan religi.</p>
+        <p class="mt-2 text-sm text-slate-300">Rute wali, pesantren, dan perjalanan religi rombongan.</p>
       </div>
       <div class="p-6 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition">
         <div class="text-3xl">✈️</div>
         <div class="mt-3 font-bold text-lg">Antar-Jemput</div>
-        <p class="mt-2 text-sm text-slate-300">Bandara, stasiun, hotel, acara keluarga/instansi.</p>
+        <p class="mt-2 text-sm text-slate-300">Bandara, stasiun, hotel, event—one way/PP.</p>
       </div>
       <div class="p-6 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition">
         <div class="text-3xl">🕋</div>
-        <div class="mt-3 font-bold text-lg">Rombongan Haji/Umrah</div>
-        <p class="mt-2 text-sm text-slate-300">Koordinasi kloter, titik kumpul, bagasi, dan jadwal.</p>
+        <div class="mt-3 font-bold text-lg">Shuttle Jamaah</div>
+        <p class="mt-2 text-sm text-slate-300">Titik kumpul, kloter, bagasi, koordinasi jadwal rapi.</p>
       </div>
     </div>
   </section>
@@ -306,25 +271,25 @@
   <section id="armada" class="bg-slate-950/40 border-y border-white/10">
     <div class="max-w-6xl mx-auto px-5 py-16">
       <h2 class="text-3xl font-extrabold tracking-tight">Armada</h2>
-      <p class="mt-2 text-slate-300">Contoh tipe armada—silakan sesuaikan detail (tahun, fasilitas, foto).</p>
+      <p class="mt-2 text-slate-300">Sesuaikan detail real armada (tahun, fasilitas, foto). Ini template siap pakai.</p>
 
       <div class="mt-8 grid lg:grid-cols-2 gap-6">
         <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
           <div class="flex items-start justify-between gap-6">
             <div>
-              <div class="text-xl font-bold">Isuzu Elf Short</div>
-              <div class="text-sm text-slate-300 mt-1">Kapasitas 10–12 seat (opsional)</div>
+              <div class="text-xl font-bold">Elf (Short / Long)</div>
+              <div class="text-sm text-slate-300 mt-1">10–19 seat (opsional)</div>
             </div>
             <div class="px-3 py-1 rounded-full text-xs bg-emerald-500/15 text-emerald-200 border border-emerald-500/30">Favorit</div>
           </div>
           <ul class="mt-5 grid sm:grid-cols-2 gap-3 text-sm text-slate-200">
             <li class="flex gap-2"><span>✅</span> AC dingin</li>
-            <li class="flex gap-2"><span>✅</span> Audio / Bluetooth</li>
             <li class="flex gap-2"><span>✅</span> Reclining seat</li>
+            <li class="flex gap-2"><span>✅</span> Audio</li>
             <li class="flex gap-2"><span>✅</span> Bagasi fleksibel</li>
           </ul>
           <div class="mt-6 flex flex-wrap items-center justify-between gap-3">
-            <div class="text-slate-300 text-sm">Cocok untuk city tour & ziarah.</div>
+            <div class="text-slate-300 text-sm">Cocok city tour, ziarah, keluarga.</div>
             <a class="text-sm text-brandGold hover:brightness-110" href="#kontak">Tanya ketersediaan →</a>
           </div>
         </div>
@@ -332,19 +297,59 @@
         <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
           <div class="flex items-start justify-between gap-6">
             <div>
-              <div class="text-xl font-bold">Isuzu Elf Long</div>
-              <div class="text-sm text-slate-300 mt-1">Kapasitas 15–19 seat (opsional)</div>
+              <div class="text-xl font-bold">Hiace Commuter</div>
+              <div class="text-sm text-slate-300 mt-1">12–15 seat (opsional)</div>
             </div>
-            <div class="px-3 py-1 rounded-full text-xs bg-brandGold/15 text-brandGold border border-brandGold/30">Rombongan</div>
+            <div class="px-3 py-1 rounded-full text-xs bg-brandGold/15 text-brandGold border border-brandGold/30">Nyaman</div>
           </div>
           <ul class="mt-5 grid sm:grid-cols-2 gap-3 text-sm text-slate-200">
-            <li class="flex gap-2"><span>✅</span> AC double blower</li>
-            <li class="flex gap-2"><span>✅</span> Kabin lega</li>
-            <li class="flex gap-2"><span>✅</span> Charger port</li>
-            <li class="flex gap-2"><span>✅</span> Bagasi lebih luas</li>
+            <li class="flex gap-2"><span>✅</span> Kabin nyaman</li>
+            <li class="flex gap-2"><span>✅</span> AC stabil</li>
+            <li class="flex gap-2"><span>✅</span> Cocok antar-jemput</li>
+            <li class="flex gap-2"><span>✅</span> Bagasi rapi</li>
           </ul>
           <div class="mt-6 flex flex-wrap items-center justify-between gap-3">
-            <div class="text-slate-300 text-sm">Cocok untuk wisata luar kota & kloter.</div>
+            <div class="text-slate-300 text-sm">Cocok bandara, event, trip keluarga.</div>
+            <a class="text-sm text-brandGold hover:brightness-110" href="#kontak">Minta penawaran →</a>
+          </div>
+        </div>
+
+        <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
+          <div class="flex items-start justify-between gap-6">
+            <div>
+              <div class="text-xl font-bold">Bus Medium</div>
+              <div class="text-sm text-slate-300 mt-1">±25–33 seat (opsional)</div>
+            </div>
+            <div class="px-3 py-1 rounded-full text-xs bg-blue-500/15 text-blue-200 border border-blue-500/30">Rombongan</div>
+          </div>
+          <ul class="mt-5 grid sm:grid-cols-2 gap-3 text-sm text-slate-200">
+            <li class="flex gap-2"><span>✅</span> Bagasi cukup</li>
+            <li class="flex gap-2"><span>✅</span> Cocok sekolah/kantor</li>
+            <li class="flex gap-2"><span>✅</span> Kru/driver berpengalaman</li>
+            <li class="flex gap-2"><span>✅</span> Jadwal fleksibel</li>
+          </ul>
+          <div class="mt-6 flex flex-wrap items-center justify-between gap-3">
+            <div class="text-slate-300 text-sm">Cocok study tour & wisata rombongan.</div>
+            <a class="text-sm text-brandGold hover:brightness-110" href="#kontak">Cek jadwal →</a>
+          </div>
+        </div>
+
+        <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
+          <div class="flex items-start justify-between gap-6">
+            <div>
+              <div class="text-xl font-bold">Big Bus</div>
+              <div class="text-sm text-slate-300 mt-1">±45–59 seat (opsional)</div>
+            </div>
+            <div class="px-3 py-1 rounded-full text-xs bg-purple-500/15 text-purple-200 border border-purple-500/30">Skala Besar</div>
+          </div>
+          <ul class="mt-5 grid sm:grid-cols-2 gap-3 text-sm text-slate-200">
+            <li class="flex gap-2"><span>✅</span> Kapasitas besar</li>
+            <li class="flex gap-2"><span>✅</span> Bagasi luas</li>
+            <li class="flex gap-2"><span>✅</span> Cocok ziarah masal</li>
+            <li class="flex gap-2"><span>✅</span> Multi unit siap</li>
+          </ul>
+          <div class="mt-6 flex flex-wrap items-center justify-between gap-3">
+            <div class="text-slate-300 text-sm">Cocok event besar & rombongan.</div>
             <a class="text-sm text-brandGold hover:brightness-110" href="#kontak">Minta penawaran →</a>
           </div>
         </div>
@@ -352,218 +357,123 @@
     </div>
   </section>
 
-  <!-- Packages / Pricing -->
+  <!-- Pricing -->
   <section id="paket" class="max-w-6xl mx-auto px-5 py-16">
     <div class="flex items-end justify-between gap-6 flex-wrap">
       <div>
-        <h2 class="text-3xl font-extrabold tracking-tight">Paket Populer</h2>
-        <p class="mt-2 text-slate-300">Harga dapat menyesuaikan rute, durasi, musim, dan jumlah unit.</p>
+        <h2 class="text-3xl font-extrabold tracking-tight">Estimasi Harga (Contoh)</h2>
+        <p class="mt-2 text-slate-300">Harga real tergantung rute, durasi, musim, BBM/tol, dan ketersediaan.</p>
       </div>
-      <div class="text-sm text-slate-400">*Ganti nominal sesuai real pricing</div>
+      <div class="text-sm text-slate-400">*Silakan sesuaikan nominal</div>
     </div>
 
-    <div class="mt-8 grid lg:grid-cols-3 gap-5">
+    <div class="mt-8 grid lg:grid-cols-4 gap-5">
       <div class="p-7 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition">
-        <div class="text-sm text-slate-300">City Tour / Dalam Kota</div>
-        <div class="mt-2 text-3xl font-extrabold">Rp 1,2jt<span class="text-base font-semibold text-slate-400">/hari</span></div>
+        <div class="text-sm text-slate-300">Elf / Hiace</div>
+        <div class="mt-2 text-3xl font-extrabold">Rp 1,2–2,2jt<span class="text-base font-semibold text-slate-400">/hari</span></div>
         <ul class="mt-5 grid gap-2 text-sm text-slate-200">
-          <li class="flex gap-2"><span>✅</span> Driver + BBM (opsional)</li>
+          <li class="flex gap-2"><span>✅</span> Driver</li>
           <li class="flex gap-2"><span>✅</span> 12 jam layanan</li>
-          <li class="flex gap-2"><span>✅</span> Fleksibel rute</li>
+          <li class="flex gap-2"><span>✅</span> Rute fleksibel</li>
         </ul>
-        <a class="mt-6 inline-flex w-full items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-brandGold text-slate-950 font-semibold" href="#kontak">Pesan Paket →</a>
+        <a class="mt-6 inline-flex w-full items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-brandGold text-slate-950 font-semibold" href="#kontak">Tanya Harga →</a>
+      </div>
+
+      <div class="p-7 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition">
+        <div class="text-sm text-slate-300">Bus Medium</div>
+        <div class="mt-2 text-3xl font-extrabold">Rp 2,8–4,5jt<span class="text-base font-semibold text-slate-400">/hari</span></div>
+        <ul class="mt-5 grid gap-2 text-sm text-slate-200">
+          <li class="flex gap-2"><span>✅</span> Rombongan sekolah/kantor</li>
+          <li class="flex gap-2"><span>✅</span> Bagasi cukup</li>
+          <li class="flex gap-2"><span>✅</span> Jadwal rapi</li>
+        </ul>
+        <a class="mt-6 inline-flex w-full items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-white/10 border border-white/15 hover:bg-white/15 transition font-semibold" href="#kontak">Cek Jadwal →</a>
       </div>
 
       <div class="p-7 rounded-3xl border border-brandGold/30 bg-gradient-to-b from-brandGold/15 to-white/5 shadow-soft">
         <div class="flex items-center justify-between">
-          <div class="text-sm text-slate-300">Wisata Luar Kota</div>
-          <div class="px-3 py-1 rounded-full text-xs bg-brandGold text-slate-950 font-bold">Best Deal</div>
+          <div class="text-sm text-slate-300">Big Bus</div>
+          <div class="px-3 py-1 rounded-full text-xs bg-brandGold text-slate-950 font-bold">Favorit Event</div>
         </div>
-        <div class="mt-2 text-3xl font-extrabold">Rp 1,8jt<span class="text-base font-semibold text-slate-400">/hari</span></div>
+        <div class="mt-2 text-3xl font-extrabold">Rp 4,5–7,5jt<span class="text-base font-semibold text-slate-400">/hari</span></div>
         <ul class="mt-5 grid gap-2 text-sm text-slate-200">
-          <li class="flex gap-2"><span>✅</span> Driver berpengalaman</li>
-          <li class="flex gap-2"><span>✅</span> BBM & tol (opsional)</li>
-          <li class="flex gap-2"><span>✅</span> Cocok Bromo/Batu/Malang</li>
+          <li class="flex gap-2"><span>✅</span> Kapasitas besar</li>
+          <li class="flex gap-2"><span>✅</span> Multi unit</li>
+          <li class="flex gap-2"><span>✅</span> Cocok ziarah masal</li>
         </ul>
-        <a class="mt-6 inline-flex w-full items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-brandGold text-slate-950 font-semibold" href="#kontak">Konsultasi Rute →</a>
+        <a class="mt-6 inline-flex w-full items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-brandGold text-slate-950 font-semibold" href="#kontak">Minta Penawaran →</a>
       </div>
 
       <div class="p-7 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition">
-        <div class="text-sm text-slate-300">Rombongan Haji/Umrah</div>
+        <div class="text-sm text-slate-300">Shuttle Jamaah</div>
         <div class="mt-2 text-3xl font-extrabold">Custom<span class="text-base font-semibold text-slate-400">/jadwal</span></div>
         <ul class="mt-5 grid gap-2 text-sm text-slate-200">
-          <li class="flex gap-2"><span>✅</span> Multi-unit & koordinasi kloter</li>
-          <li class="flex gap-2"><span>✅</span> Briefing titik kumpul</li>
-          <li class="flex gap-2"><span>✅</span> Penyesuaian bagasi</li>
+          <li class="flex gap-2"><span>✅</span> Titik kumpul & kloter</li>
+          <li class="flex gap-2"><span>✅</span> Bagasi & time slot</li>
+          <li class="flex gap-2"><span>✅</span> Koordinasi panitia</li>
         </ul>
-        <a class="mt-6 inline-flex w-full items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-white/10 border border-white/15 hover:bg-white/15 transition font-semibold" href="#kontak">Minta Penawaran →</a>
+        <a class="mt-6 inline-flex w-full items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-white/10 border border-white/15 hover:bg-white/15 transition font-semibold" href="#kontak">Konsultasi →</a>
       </div>
     </div>
   </section>
 
-  <!-- How it works -->
-  <section class="bg-slate-950/40 border-y border-white/10">
+  <!-- Shuttle Jamaah (concept section) -->
+  <section id="shuttle" class="bg-slate-950/40 border-y border-white/10">
     <div class="max-w-6xl mx-auto px-5 py-16">
-      <h2 class="text-3xl font-extrabold tracking-tight">Cara Booking</h2>
-      <p class="mt-2 text-slate-300">Proses singkat, jelas, dan rapi.</p>
+      <h2 class="text-3xl font-extrabold tracking-tight">Konsep Shuttle Jamaah Umrah/Haji</h2>
+      <p class="mt-2 text-slate-300">Fokus kami: rapi, on-time, dan memudahkan panitia/jamaah.</p>
 
       <div class="mt-8 grid md:grid-cols-3 gap-5">
         <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
           <div class="h-10 w-10 rounded-2xl bg-brandGold/15 border border-brandGold/30 flex items-center justify-center font-bold">1</div>
-          <div class="mt-4 font-bold text-lg">Konsultasi</div>
-          <p class="mt-2 text-sm text-slate-300">Kirim detail rute, tanggal, jumlah penumpang, dan titik jemput.</p>
+          <div class="mt-4 font-bold text-lg">Titik Kumpul</div>
+          <p class="mt-2 text-sm text-slate-300">Setting titik kumpul, jam kumpul, dan pembagian armada per rombongan.</p>
         </div>
         <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
           <div class="h-10 w-10 rounded-2xl bg-brandGold/15 border border-brandGold/30 flex items-center justify-center font-bold">2</div>
-          <div class="mt-4 font-bold text-lg">Penawaran</div>
-          <p class="mt-2 text-sm text-slate-300">Kami kirim estimasi biaya + ketentuan (BBM, tol, parkir, overtime).</p>
+          <div class="mt-4 font-bold text-lg">Bagasi & Seat</div>
+          <p class="mt-2 text-sm text-slate-300">Koordinasi koper/bagasi, seat plan, dan kebutuhan khusus jamaah.</p>
         </div>
         <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
           <div class="h-10 w-10 rounded-2xl bg-brandGold/15 border border-brandGold/30 flex items-center justify-center font-bold">3</div>
-          <div class="mt-4 font-bold text-lg">Fix Jadwal</div>
-          <p class="mt-2 text-sm text-slate-300">DP (opsional) → jadwal dikunci. H-1 kami konfirmasi driver & unit.</p>
+          <div class="mt-4 font-bold text-lg">On-Time Berangkat</div>
+          <p class="mt-2 text-sm text-slate-300">Konfirmasi H-1: driver, armada, rute, estimasi waktu tiba bandara/embarkasi.</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Testimonials -->
-  
-  <section id="testimoni" class="max-w-6xl mx-auto px-5 py-16">
-    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-      <div>
-        <h2 class="text-3xl font-extrabold tracking-tight">Testimoni</h2>
-        <p class="mt-2 text-slate-300">Ulasan pelanggan yang sudah memakai layanan Berkah Trans Indonesia.</p>
-      </div>
-      <a href="#tambah-testimoni" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-2xl border border-white/15 bg-white/5 hover:bg-white/10 transition">
-        Tambah Testimoni
-        <span aria-hidden="true">✍️</span>
-      </a>
-    </div>
-
-    <!-- List testimoni (diisi otomatis dari endpoint) -->
-    <div id="testimonialGrid" class="mt-8 grid md:grid-cols-3 gap-5">
-      <!-- fallback (akan diganti saat data berhasil dimuat) -->
-      <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
-        <div class="text-brandGold">★★★★★</div>
-        <p class="mt-3 text-slate-200">"Armada bersih, AC dingin, driver ramah. Trip keluarga jadi nyaman!"</p>
-        <div class="mt-4 text-sm text-slate-400">— Ibu R, Surabaya</div>
-      </div>
-      <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
-        <div class="text-brandGold">★★★★★</div>
-        <p class="mt-3 text-slate-200">"Rombongan ziarah tertib, waktu on time, koordinasi gampang via WA."</p>
-        <div class="mt-4 text-sm text-slate-400">— Pak H, Pasuruan</div>
-      </div>
-      <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
-        <div class="text-brandGold">★★★★★</div>
-        <p class="mt-3 text-slate-200">"Harga jelas dari awal, tidak ada biaya mendadak. Recommended."</p>
-        <div class="mt-4 text-sm text-slate-400">— Admin Travel, Malang</div>
-      </div>
-    </div>
-
-    <!-- Form tambah testimoni -->
-    <div id="tambah-testimoni" class="mt-10 grid lg:grid-cols-2 gap-6 items-start">
-      <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
-        <div class="font-bold text-lg">Tulis testimoni Anda</div>
-        <p class="mt-2 text-sm text-slate-300">
-          Testimoni akan tampil di beranda setelah <b>verifikasi admin</b> (untuk mencegah spam).
-        </p>
-
-        <form id="testimonialForm" class="mt-5 grid gap-3">
-          <div class="grid sm:grid-cols-2 gap-3">
-            <label class="grid gap-1 text-sm">
-              <span class="text-slate-300">Nama</span>
-              <input id="tName" required maxlength="40" class="px-4 py-3 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="Contoh: Ahmad" />
-            </label>
-            <label class="grid gap-1 text-sm">
-              <span class="text-slate-300">Kota</span>
-              <input id="tCity" maxlength="40" class="px-4 py-3 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="Contoh: Pasuruan" />
-            </label>
-          </div>
-
-          <div class="grid sm:grid-cols-2 gap-3">
-            <label class="grid gap-1 text-sm">
-              <span class="text-slate-300">Rating</span>
-              <select id="tRating" class="px-4 py-3 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60">
-                <option value="5" selected>★★★★★ (5)</option>
-                <option value="4">★★★★☆ (4)</option>
-                <option value="3">★★★☆☆ (3)</option>
-                <option value="2">★★☆☆☆ (2)</option>
-                <option value="1">★☆☆☆☆ (1)</option>
-              </select>
-            </label>
-            <label class="grid gap-1 text-sm">
-              <span class="text-slate-300">Jenis perjalanan (opsional)</span>
-              <select id="tTrip" class="px-4 py-3 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60">
-                <option value="">Pilih…</option>
-                <option>Pariwisata</option>
-                <option>Ziarah</option>
-                <option>Haji/Umrah</option>
-                <option>Antar-jemput</option>
-                <option>Rombongan</option>
-              </select>
-            </label>
-          </div>
-
-          <label class="grid gap-1 text-sm">
-            <span class="text-slate-300">Pesan</span>
-            <textarea id="tMessage" required minlength="10" maxlength="320" rows="4" class="px-4 py-3 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="Tulis pengalaman Anda (min. 10 karakter)"></textarea>
-          </label>
-
-          <!-- Honeypot anti-bot (jangan dihapus) -->
-          <input id="tWebsite" class="hidden" tabindex="-1" autocomplete="off" />
-
-          <button id="tSubmit" class="mt-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-brandGold text-slate-950 font-semibold hover:brightness-110 transition" type="submit">
-            Kirim Testimoni
-            <span aria-hidden="true">→</span>
-          </button>
-
-          <p id="tStatus" class="text-xs text-slate-400"></p>
-        </form>
-      </div>
-
-      <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
-        <div class="font-bold text-lg">Catatan</div>
-        <ul class="mt-3 text-sm text-slate-300 grid gap-2 list-disc pl-5">
-          <li>Mohon gunakan bahasa yang sopan & jelas.</li>
-          <li>Testimoni yang mengandung spam/iklan akan ditolak.</li>
-          <li>Jika butuh respon cepat, lebih baik langsung chat WhatsApp.</li>
-        </ul>
-        <a id="waTesti" href="#kontak" class="mt-5 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border border-white/15 bg-white/5 hover:bg-white/10 transition">
-          Chat WhatsApp
-          <span aria-hidden="true">💬</span>
+      <div class="mt-8 p-6 rounded-3xl border border-white/10 bg-white/5">
+        <div class="font-bold">Butuh koordinasi multi-unit?</div>
+        <p class="mt-2 text-sm text-slate-300">Kirim jumlah jamaah, titik jemput, dan jadwal. Kami bantu breakdown armada (Elf/Hiace/Bus) agar rapi.</p>
+        <a href="#kontak" class="mt-4 inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-brandGold text-slate-950 font-semibold shadow-soft hover:brightness-110 transition">
+          Konsultasi Shuttle <span aria-hidden="true">→</span>
         </a>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="bg-slate-950/40 border-y border-white/10">
-    <div class="max-w-6xl mx-auto px-5 py-16">
-      <h2 class="text-3xl font-extrabold tracking-tight">FAQ</h2>
-      <div class="mt-8 grid lg:grid-cols-2 gap-4">
+  <section id="faq" class="max-w-6xl mx-auto px-5 py-16">
+    <h2 class="text-3xl font-extrabold tracking-tight">FAQ</h2>
+    <div class="mt-8 grid lg:grid-cols-2 gap-4">
+      <details class="p-6 rounded-3xl border border-white/10 bg-white/5">
+        <summary class="cursor-pointer font-semibold">Harga sudah termasuk BBM & tol?</summary>
+        <p class="mt-3 text-sm text-slate-300">Tergantung paket. Bisa <b>all-in</b> atau <b>exclude</b> (BBM/tol/parkir). Semua dijelaskan di awal.</p>
+      </details>
 
-        <details class="p-6 rounded-3xl border border-white/10 bg-white/5">
-          <summary class="cursor-pointer font-semibold">Harga sudah termasuk BBM & tol?</summary>
-          <p class="mt-3 text-sm text-slate-300">Tergantung paket. Kami bisa berikan opsi <b>all-in</b> atau <b>lepas kunci paket</b>. Semua detail dikonfirmasi sebelum berangkat.</p>
-        </details>
+      <details class="p-6 rounded-3xl border border-white/10 bg-white/5">
+        <summary class="cursor-pointer font-semibold">Bisa booking multi unit?</summary>
+        <p class="mt-3 text-sm text-slate-300">Bisa. Kami bantu pembagian armada sesuai jumlah rombongan & seat.</p>
+      </details>
 
-        <details class="p-6 rounded-3xl border border-white/10 bg-white/5">
-          <summary class="cursor-pointer font-semibold">Berapa minimal DP untuk booking?</summary>
-          <p class="mt-3 text-sm text-slate-300">Umumnya DP untuk mengunci jadwal (opsional sesuai rute/musim). Kami informasikan nominal DP saat penawaran.</p>
-        </details>
+      <details class="p-6 rounded-3xl border border-white/10 bg-white/5">
+        <summary class="cursor-pointer font-semibold">Untuk shuttle jamaah, apa saja data yang dibutuhkan?</summary>
+        <p class="mt-3 text-sm text-slate-300">Minimal: jadwal (tanggal/jam), titik jemput, jumlah jamaah, jumlah koper, dan jenis armada yang diinginkan.</p>
+      </details>
 
-        <details class="p-6 rounded-3xl border border-white/10 bg-white/5">
-          <summary class="cursor-pointer font-semibold">Bisa beberapa unit sekaligus?</summary>
-          <p class="mt-3 text-sm text-slate-300">Bisa. Kirim jumlah unit & jadwal, kami koordinasi ketersediaan dan pengaturan titik kumpul rombongan.</p>
-        </details>
-
-        <details class="p-6 rounded-3xl border border-white/10 bg-white/5">
-          <summary class="cursor-pointer font-semibold">Area layanan sampai mana?</summary>
-          <p class="mt-3 text-sm text-slate-300">Utama Jawa Timur & kota-kota sekitar. Untuk luar provinsi, bisa konsultasi—kami hitungkan durasi & biaya.</p>
-        </details>
-
-      </div>
+      <details class="p-6 rounded-3xl border border-white/10 bg-white/5">
+        <summary class="cursor-pointer font-semibold">Minimal DP untuk kunci jadwal?</summary>
+        <p class="mt-3 text-sm text-slate-300">DP sifatnya opsional sesuai rute/musim. Kami informasikan saat penawaran.</p>
+      </details>
     </div>
   </section>
 
@@ -572,16 +482,16 @@
     <div class="grid lg:grid-cols-2 gap-8 items-start">
       <div>
         <h2 class="text-3xl font-extrabold tracking-tight">Kontak & Booking</h2>
-        <p class="mt-2 text-slate-300">Isi data singkat—kami respon secepatnya.</p>
+        <p class="mt-2 text-slate-300">Kirim detail singkat—kami respon secepatnya.</p>
 
         <div class="mt-6 grid gap-3 text-sm">
           <div class="p-5 rounded-3xl border border-white/10 bg-white/5">
             <div class="font-semibold">WhatsApp</div>
-            <div id="contactPhone" class="text-slate-300">+6285190643564</div>
+            <div id="contactPhone" class="text-slate-300">+62xxxxxxxxxxx</div>
           </div>
           <div class="p-5 rounded-3xl border border-white/10 bg-white/5">
             <div class="font-semibold">Alamat Garasi / Kantor</div>
-            <div class="text-slate-300">Jalan raya grandsite No.32, Mergelo, Surodinawan, Kec. Prajurit Kulon, Kota Mojokerto, Jawa Timur 61328</div>
+            <div class="text-slate-300">Silakan isi alamat Anda di sini.</div>
           </div>
           <div class="p-5 rounded-3xl border border-white/10 bg-white/5">
             <div class="font-semibold">Jam Operasional</div>
@@ -595,21 +505,34 @@
           <div class="grid sm:grid-cols-2 gap-3">
             <label class="grid gap-1 text-sm">
               <span class="text-slate-300">Nama</span>
-              <input id="nama" required class="px-4 py-3 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="Nama Anda" />
+              <input id="nama" required class="h-12 px-4 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="Nama Anda" />
             </label>
             <label class="grid gap-1 text-sm">
               <span class="text-slate-300">No. WhatsApp</span>
-              <input id="hp" required class="px-4 py-3 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="08xxxxxxxxxx" />
+              <input id="hp" required class="h-12 px-4 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="08xxxxxxxxxx" />
             </label>
           </div>
+
+          <label class="grid gap-1 text-sm">
+            <span class="text-slate-300">Armada</span>
+            <select id="armada2" class="h-12 px-4 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60">
+              <option>Elf</option>
+              <option>Hiace</option>
+              <option>Bus Medium</option>
+              <option>Big Bus</option>
+              <option>Custom / Multi Unit</option>
+            </select>
+          </label>
+
           <label class="grid gap-1 text-sm">
             <span class="text-slate-300">Detail kebutuhan</span>
-            <textarea id="detail" rows="4" class="px-4 py-3 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="Contoh: Sewa Elf Long untuk ziarah 2 hari, berangkat dari Pasuruan, 18 pax."></textarea>
+            <textarea id="detail" rows="4" class="px-4 py-3 rounded-2xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brandGold/60" placeholder="Contoh: Shuttle Umrah 2 unit Hiace, titik jemput Pasuruan, berangkat 04.00, 30 pax + koper."></textarea>
           </label>
+
           <button class="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-brandGold text-slate-950 font-semibold hover:brightness-110 transition" type="submit">
-            Kirim via WhatsApp
-            <span aria-hidden="true">→</span>
+            Kirim via WhatsApp <span aria-hidden="true">→</span>
           </button>
+
           <p class="text-xs text-slate-400">Dengan mengirim, Anda akan diarahkan ke WhatsApp (tanpa menyimpan data di website).</p>
         </form>
       </div>
@@ -624,7 +547,7 @@
           <img src="assets/logo.png" alt="Logo Berkah Trans Indonesia" class="h-9 w-auto" />
           <div>
             <div class="font-extrabold">Berkah <span class="text-brandGold">Trans</span> Indonesia</div>
-            <div class="text-xs text-slate-400">Sewa Mobil Elf • Pariwisata • Haji/Umrah</div>
+            <div class="text-xs text-slate-400">Travel Pariwisata • Shuttle Jamaah Umrah/Haji</div>
           </div>
         </div>
         <div class="text-sm text-slate-400">© <span id="year"></span> Berkah Trans Indonesia. All rights reserved.</div>
@@ -632,36 +555,56 @@
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
+  <!-- Floating WhatsApp -->
   <a id="waFloat" href="#" class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 px-4 py-3 rounded-2xl bg-emerald-500 text-slate-950 font-semibold shadow-soft hover:brightness-110 transition" aria-label="Chat WhatsApp">
-    <span>WhatsApp</span>
-    <span aria-hidden="true">💬</span>
+    <span>WhatsApp</span><span aria-hidden="true">💬</span>
   </a>
 
   <script>
+    // ===================== CONFIG =====================
+    // Ubah 1x di sini saja (tanpa +, tanpa spasi)
     const WHATSAPP_NUMBER = '6285190643564';
 
     function buildWaLink(message) {
-      const text = encodeURIComponent(message);
-      return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     }
 
-    // Navbar mobile
+    // ===================== UI =====================
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
     mobileMenu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
 
-    // Quick form (hero)
+    // Update phone display
+    document.querySelectorAll('#topPhone span').forEach(el => el.textContent = '+' + WHATSAPP_NUMBER);
+    const contactPhone = document.getElementById('contactPhone');
+    if (contactPhone) contactPhone.textContent = '+' + WHATSAPP_NUMBER;
+
+    // ===================== WhatsApp actions =====================
+    const genericMsg = 'Assalamualaikum, saya mau tanya layanan Travel Berkah Trans Indonesia. Mohon info harga & ketersediaan armada ya.';
+    document.getElementById('waFloat').href = buildWaLink(genericMsg);
+    document.getElementById('waHero').href = buildWaLink(genericMsg);
+
+    // Quick form
     document.getElementById('quickForm')?.addEventListener('submit', (e) => {
       e.preventDefault();
       const asal = document.getElementById('asal').value.trim();
       const tujuan = document.getElementById('tujuan').value.trim();
-      const tanggal = document.getElementById('tanggal').value;
-      const pax = document.getElementById('pax').value;
+      const tanggal = document.getElementById('tanggal').value || '-';
+      const pax = document.getElementById('pax').value || '-';
       const kebutuhan = document.getElementById('kebutuhan').value;
+      const armada = document.getElementById('armada').value;
 
-      const msg = `Assalamualaikum, saya mau tanya sewa Elf.\n\nAsal: ${asal}\nTujuan: ${tujuan}\nTanggal: ${tanggal || '-'}\nJumlah pax: ${pax || '-'}\nKebutuhan: ${kebutuhan}\n\nMohon estimasi harga & ketersediaannya ya.`;
+      const msg =
+`Assalamualaikum, saya mau minta estimasi.
+Asal: ${asal}
+Tujuan: ${tujuan}
+Tanggal: ${tanggal}
+Jumlah pax: ${pax}
+Kebutuhan: ${kebutuhan}
+Armada: ${armada}
+
+Mohon info harga & ketersediaannya ya.`;
       window.open(buildWaLink(msg), '_blank');
     });
 
@@ -670,177 +613,20 @@
       e.preventDefault();
       const nama = document.getElementById('nama').value.trim();
       const hp = document.getElementById('hp').value.trim();
-      const detail = document.getElementById('detail').value.trim();
+      const armada = document.getElementById('armada2').value;
+      const detail = document.getElementById('detail').value.trim() || '-';
 
-      const msg = `Assalamualaikum, saya ${nama}.\nNo WA saya: ${hp}.\n\nSaya ingin booking/bertanya:\n${detail || '-'}\n\nMohon info ketersediaan & estimasinya.`;
+      const msg =
+`Assalamualaikum, saya ${nama}.
+No WA saya: ${hp}
+Armada: ${armada}
+
+Detail kebutuhan:
+${detail}
+
+Mohon info ketersediaan & estimasinya.`;
       window.open(buildWaLink(msg), '_blank');
     });
-
-    // WA buttons
-    const genericMsg = 'Assalamualaikum, saya mau tanya sewa mobil Elf Berkah Trans Indonesia. Mohon info harga & ketersediaan ya.';
-    document.getElementById('waFloat').href = buildWaLink(genericMsg);
-
-    // WA button in testimonial note
-    const waTestiBtn = document.getElementById('waTesti');
-    if (waTestiBtn) waTestiBtn.href = buildWaLink(genericMsg);
-
-    // Update phone display
-    const phoneText = document.querySelectorAll('#topPhone span');
-    phoneText.forEach(el => (el.textContent = '+' + WHATSAPP_NUMBER));
-
-    // Update contact section phone (card)
-    const contactPhone = document.getElementById('contactPhone');
-    if (contactPhone) contactPhone.textContent = '+' + WHATSAPP_NUMBER;
-    // ====== TESTIMONI (opsional) ======
-    // Cara kerja:
-    // 1) Buat Google Sheet + Apps Script (kode ada di README)
-    // 2) Deploy Apps Script sebagai Web App
-    // 3) Tempel URL Web App di TESTIMONIAL_API_URL
-    //
-    // Jika URL kosong, web akan tetap menampilkan testimoni contoh (fallback).
-    const TESTIMONIAL_API_URL = 'https://script.google.com/macros/s/AKfycbzpypdX-c_Bc1poJER2nSahFp53draLUnI2ndhqHlxVHKtAw2qFMmiD-nsr3olL83jH/exec';
-    const testimonialGrid = document.getElementById('testimonialGrid');
-    const testimonialForm = document.getElementById('testimonialForm');
-    const tStatus = document.getElementById('tStatus');
-    const tSubmit = document.getElementById('tSubmit');
-
-    function starText(n) {
-      const r = Math.max(1, Math.min(5, Number(n) || 5));
-      return '★★★★★'.slice(0, r) + '☆☆☆☆☆'.slice(0, 5 - r);
-    }
-
-    function escapeHtml(str) {
-      return String(str ?? '')
-        .replaceAll('&', '&amp;')
-        .replaceAll('<', '&lt;')
-        .replaceAll('>', '&gt;')
-        .replaceAll('"', '&quot;')
-        .replaceAll("'", '&#039;');
-    }
-
-    function renderTestimonials(list) {
-      if (!testimonialGrid) return;
-      if (!Array.isArray(list) || list.length === 0) return;
-
-      testimonialGrid.innerHTML = list.slice(0, 9).map(t => {
-        const name = escapeHtml(t.name || 'Pelanggan');
-        const city = escapeHtml(t.city || '');
-        const rating = starText(t.rating);
-        const msg = escapeHtml(t.message || '');
-        const trip = escapeHtml(t.trip || '');
-        const meta = [name, city].filter(Boolean).join(', ');
-        const badge = trip ? `<span class="inline-flex items-center px-2 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-300">${trip}</span>` : '';
-        return `
-          <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
-            <div class="flex items-center justify-between gap-3">
-              <div class="text-brandGold">${rating}</div>
-              ${badge}
-            </div>
-            <p class="mt-3 text-slate-200">"${msg}"</p>
-            <div class="mt-4 text-sm text-slate-400">— ${meta || 'Pelanggan Berkah Trans'}</div>
-          </div>
-        `;
-      }).join('');
-    }
-
-    function loadTestimonials() {
-  if (!TESTIMONIAL_API_URL) return; // fallback tetap tampil
-
-  // callback global untuk menerima data dari Apps Script
-  window.__renderTesti = (data) => {
-    if (data?.ok) renderTestimonials(data.data || []);
-  };
-
-  // panggil endpoint JSONP (tanpa CORS)
-  const s = document.createElement('script');
-  s.src = `${TESTIMONIAL_API_URL}?action=list&callback=__renderTesti`;
-  s.onerror = () => console.warn('Gagal load testimoni (JSONP).');
-  document.body.appendChild(s);
-}
-
-    
-    async function submitTestimonial(payload) {
-  const url = (TESTIMONIAL_API_URL || '').trim();
-  if (!url) return { ok: false, message: 'URL API testimoni masih kosong.' };
-
-  // 1) Coba POST normal (kadang bisa sukses)
-  try {
-    const res = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify(payload),
-      redirect: 'follow'
-    });
-
-    // Kalau bisa dibaca JSON, bagus
-    try {
-      const j = await res.json();
-      return j && typeof j.ok !== 'undefined' ? j : { ok: true };
-    } catch {
-      // Kalau CORS bikin response nggak kebaca tapi request kemungkinan masuk
-      if (res.ok) return { ok: true };
-    }
-  } catch (_) {
-    // lanjut fallback
-  }
-
-  // 2) Fallback: fire-and-forget (tidak baca response)
-  try {
-    await fetch(url, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify(payload)
-    });
-    return { ok: true };
-  } catch (e) {
-    return { ok: false, message: 'Tidak bisa akses API. Pastikan Apps Script publish "Anyone" dan pakai URL /exec.' };
-  }
-}
-
-    testimonialForm?.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      if (!TESTIMONIAL_API_URL) {
-        tStatus.textContent = 'Admin belum mengaktifkan fitur testimoni online.';
-        return;
-      }
-
-      const website = document.getElementById('tWebsite')?.value?.trim();
-      if (website) return; // bot
-
-      const name = document.getElementById('tName').value.trim();
-      const city = document.getElementById('tCity').value.trim();
-      const rating = Number(document.getElementById('tRating').value || 5);
-      const trip = document.getElementById('tTrip').value.trim();
-      const message = document.getElementById('tMessage').value.trim();
-
-      if (message.length < 10) {
-        tStatus.textContent = 'Pesan terlalu pendek (min. 10 karakter).';
-        return;
-      }
-
-      try {
-        tSubmit.disabled = true;
-        tSubmit.classList.add('opacity-70');
-        tStatus.textContent = 'Mengirim…';
-
-        const out = await submitTestimonial({ name, city, rating, trip, message, source: 'website' });
-        if (out?.ok) {
-          testimonialForm.reset();
-          tStatus.textContent = 'Terima kasih! Testimoni Anda akan tampil setelah verifikasi admin.';
-        } else {
-          tStatus.textContent = out?.message || 'Gagal mengirim. Silakan coba lagi nanti.';
-        }
-      } catch (err) {
-        tStatus.textContent = 'Gagal mengirim. Silakan coba lagi nanti.';
-      } finally {
-        tSubmit.disabled = false;
-        tSubmit.classList.remove('opacity-70');
-      }
-    });
-
-    // Load testimoni saat halaman dibuka
-    loadTestimonials()
 
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
